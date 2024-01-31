@@ -87,8 +87,7 @@ document.getElementById("demo_button").addEventListener("click", function(event)
 
 document.addEventListener('DOMContentLoaded', function () {
     // Fetch and display elements from the server
-    checkCookie(); 
-    //cookieCheck(); 
+    cookieCheck(); 
 
 });
 
