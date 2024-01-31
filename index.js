@@ -97,7 +97,7 @@ function cookieCheck()
     if(document.cookie.split(';').some((item) => item.trim().startsWith(`${cookie_name}=`)))
     {
         console.log("true")
-        window.location.href = "https://dashboard.expense-tracker-demo.site";
+        //window.location.href = "https://dashboard.expense-tracker-demo.site";
     }
 }
 
