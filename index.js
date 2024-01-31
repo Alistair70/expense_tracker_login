@@ -76,7 +76,7 @@ document.getElementById("demo_button").addEventListener("click", function(event)
         else if(data.message === "Login successful")
         {
             const now = new Date();
-            const expirationTime = new Date(now.getTime() + 2 * 60 * 1000);
+            const expirationTime = new Date(now.getTime() + 30 * 60 * 1000);
             
             // Create a cookie string
             document.cookie = `expense_tracker_cookie_container=${encoded_id};domain=.expense-tracker-demo.site; expires=${expirationTime.toUTCString()}; path=/`;
