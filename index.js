@@ -42,7 +42,7 @@ document.getElementById("login_btn").addEventListener("click", function() {
                 
                 // Create a cookie string
                 document.cookie = `expense_tracker_cookie_container=${encoded_id}; expires=${expirationTime.toUTCString()}; path=/`;
-                window.location.href = "https://expense-tracker-dash-board.netlify.app";   
+                window.location.href = "https://dashboard.expense-tracker-demo.site";   
             } 
         })
     }
@@ -79,7 +79,7 @@ document.getElementById("demo_button").addEventListener("click", function() {
             
             // Create a cookie string
             document.cookie = `expense_tracker_cookie_container=${encoded_id};domain=.expense-tracker-demo.site; expires=${expirationTime.toUTCString()}; path=/`;
-            window.location.href = "https://expense-tracker-dash-board.netlify.app";    
+            window.location.href = "https://dashboard.expense-tracker-demo.site";    
         } 
     })
 });
@@ -96,6 +96,6 @@ function cookieCheck()
     if(document.cookie.split(';').some((item) => item.trim().startsWith(`${cookie_name}=`)))
     {
         console.log("true")
-        window.location.href = "https://expense-tracker-dash-board.netlify.app";
+        window.location.href = "https://dashboard.expense-tracker-demo.site";
     }
 }
