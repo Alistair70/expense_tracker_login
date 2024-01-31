@@ -54,7 +54,7 @@ document.getElementById("demo_button").addEventListener("click", function(event)
     const username = 'Jane25'
     const password = '12345'
 
-    fetch('/user_login', {
+    fetch('https://expense-tracker-aytr.onrender.com/user_login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
