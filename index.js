@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function cookieCheck()
 {
     cookie_name = "expense_tracker_cookie_container"
-    if(!document.cookie.split(';').some((item) => item.trim().startsWith(`${cookie_name}=`)))
+    if(document.cookie.split(';').some((item) => item.trim().startsWith(`${cookie_name}=`)))
     {
         console.log("true")
         window.location.href = "https://dashboard.expense-tracker-demo.site";
