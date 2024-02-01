@@ -97,24 +97,6 @@ function cookieCheck()
     if(document.cookie.split(';').some((item) => item.trim().startsWith(`${cookie_name}=`)))
     {
         console.log("true")
-        //window.location.href = "https://dashboard.expense-tracker-demo.site";
-    }
-}
-
-function checkCookie() 
-{
-    // Split the cookies into an array
-    var cookies = document.cookie.split(';');
-    cookieName = "expense_tracker_cookie_container"
-    // Loop through the array and check if the specified cookie exists
-    for (var i = 0; i < cookies.length; i++) 
-    {
-        var cookie = cookies[i].trim();
-      // Check if the cookie starts with the specified name
-        if (cookie.indexOf(cookieName + '=') === 0) 
-        {   
-            console.log("true");
-            window.location.href = "https://dashboard.expense-tracker-demo.site";            
-        }
+        window.location.href = "https://dashboard.expense-tracker-demo.site";
     }
 }
