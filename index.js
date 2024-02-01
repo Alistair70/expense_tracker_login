@@ -42,7 +42,7 @@ document.getElementById("login_btn").addEventListener("click", function(event) {
                 const expirationTime = new Date(now.getTime() + 15 * 60 * 1000);
                 
                 // Create a cookie string
-                document.cookie = `expense_tracker_cookie_container=${encoded_id}; expires=${expirationTime.toUTCString()}; path=/`;
+                document.cookie = `expense_tracker_cookie_container=${encoded_id}; domain=.expense-tracker-demo.site; expires=${expirationTime.toUTCString()}; path=/`;
                 window.location.href = "https://dashboard.expense-tracker-demo.site";   
             } 
         })
