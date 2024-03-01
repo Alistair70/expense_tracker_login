@@ -369,3 +369,14 @@ Progress Bars */
     width: 0;
     border-radius: 5px;
   }
+
+  .cookie-notice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
