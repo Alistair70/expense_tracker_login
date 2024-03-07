@@ -65,7 +65,6 @@ document.getElementById("demo_button").addEventListener("click", function(event)
     .then(data => 
     {
         encoded_id = data.encoded_id
-        console.log(encoded_id)
         cookie_name = "expense_tracker_cookie_container"   
         //If Request is successful user is redirected to dashboard page
         if(data.message === "Invalid username or password") 
