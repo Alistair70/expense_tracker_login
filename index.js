@@ -18,7 +18,7 @@ document.getElementById("login_btn").addEventListener("click", function(event) {
 
     //If checks are cleared request is sent to backend to validate credentials
     else{
-        fetch('https://expense-tracker-aytr.onrender.com/user_login', {
+        fetch('https://main-py-server.onrender.com/user_login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ document.getElementById("demo_button").addEventListener("click", function(event)
     const username = 'Jane25'
     const password = '12345'
 
-    fetch('https://expense-tracker-aytr.onrender.com/user_login', {
+    fetch('https://main-py-server.onrender.com/user_login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
